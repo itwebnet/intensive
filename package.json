@@ -1,0 +1,23 @@
+{
+	"name": "react",
+	"version": "1.0.0",
+	"description": "",
+	"main": "back/server.js",
+	"scripts": {
+		"start": "node back/server",
+		"server": "nodemon back/server",
+		"client": "npm run start --prefix front",
+		"dev": "concurrently \"npm run server\" \"npm run client\""
+	},
+	"author": "ITWebNet",
+	"license": "ISC",
+	"dependencies": {
+		"colors": "^1.4.0",
+		"concurrently": "^7.2.2",
+		"dotenv": "^16.0.1",
+		"express": "^4.18.1",
+		"morgan": "^1.10.0",
+		"nodemon": "^2.0.16",
+		"sass": "^1.52.3"
+	}
+}
